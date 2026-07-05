@@ -540,7 +540,6 @@
       if (initHash && pages[initHash]) {
         setActivePage(initHash);
       } else {
-        // ensure pasta is active, and set hash
         setActivePage('pasta');
         if (history.pushState) {
           history.replaceState({ page: 'pasta' }, '', window.location.pathname + '#pasta');
